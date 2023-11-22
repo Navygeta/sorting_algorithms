@@ -27,5 +27,6 @@ void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 void move_a_node(listint_t **list, listint_t *node);
 void insertion_sort_list(listint_t **list);
+size_t find_min_element(int *array, size_t start, size_t size);
 
 #endif
