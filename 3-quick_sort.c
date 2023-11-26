@@ -16,19 +16,17 @@ int partition(int *array, ssize_t low, ssize_t high, size_t size)
 
 	while (1)
 	{
-		do
-		{
+		do {
 			i++;
 		} while (array[i] < key_element);
 
-		do
-		{
+		do {
 			j--;
 		} while (array[j] > key_element);
 
 		if (i >= j)
 		{
-			return j;
+			return (j);
 		}
 
 		nod_swap(&array[i], &array[j]);
@@ -47,7 +45,7 @@ int partition(int *array, ssize_t low, ssize_t high, size_t size)
 void qs_recursive(int *array, ssize_t low, ssize_t high, size_t size)
 {
 	int p_index;
-	
+
 	if (low < high)
 	{
 		p_index = partition(array, low, high, size);
